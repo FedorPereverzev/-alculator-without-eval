@@ -19,11 +19,7 @@ const antiEval = (str) => {
     break;
     case '*':
     return +arr[0] * +arr[2];
-    break;
-    //case '%':
-    //return parseFloat(+arr[0] / 100).toFixed(2);
-      //    return +arr[0] / 100;
-    //break;      
+    break;  
   };
 };
 
@@ -70,8 +66,7 @@ keyboard.addEventListener('click', (e) => {
         count = 0;
          str = antiEval(str) / 100;
         display.textContent = str;
-        
-  booleanSign = false;
+        booleanSign = false;
     };
     
     if(target.value.match('=')){
