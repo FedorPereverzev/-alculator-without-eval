@@ -67,8 +67,10 @@ keyboard.addEventListener('click', (e) => {
     };
     
     if(target.value.match('=')){
+        count = 0;
         display.textContent = antiEval(str);
         str = antiEval(str);
+  booleanSign = false;
     };
 });
 
