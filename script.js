@@ -23,19 +23,28 @@ const antiEval = (str) => {
   };
 };
 
+let booleanSign = true;
 
 const keyboard = document.getElementById('keyboard');
   let str = '';
 keyboard.addEventListener('click', (e) => {
   
     let target = e.target;
-    if(target.value.match(/[0123456789]/)){
+    
+    if(target.value.match(/[0123456789\.]/)){
+        if (booleanSign === true){
+            display.textContent = '';
+             booleanSign = false;
+        }
     display.textContent += target.value;
         str += target.value;
+       
     };
     
-    if(target.value.match(/[+-/\///\*/]/)){
+    if(target.value.match(/[^0123456789\.]/)){
         str += ' ' + target.value + ' ';
+        booleanSign = true;
+        
     }
     
     if(target.value.match('=')){
