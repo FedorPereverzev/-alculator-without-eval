@@ -46,7 +46,7 @@ keyboard.addEventListener('click', (e) => {
         str += target.value;  
     };
     
-    if(target.value.match(/[^0123456789\.=c]/)){
+    if(target.value.match(/[^0123456789\.=c%]/)){
         count += 1;
         if(count === 2){
             display.textContent = antiEval(str);
@@ -64,6 +64,14 @@ keyboard.addEventListener('click', (e) => {
         str = ''
         display.textContent = '0';
         
+    };
+    
+    if(target.value.match('%')){
+        count = 0;
+         str = antiEval(str) / 100;
+        display.textContent = str;
+        
+  booleanSign = false;
     };
     
     if(target.value.match('=')){
