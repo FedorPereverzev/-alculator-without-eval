@@ -1,40 +1,22 @@
 <!doctype html>
 <html lang="en">
 
-  <head>
+<head>
     <meta charset="UTF-8">
-    <title>Untitled Document</title>
-    <link rel="stylesheet" href="/css/main.css">
-  </head>
-
-  <body>
-
-      
-      <div id='display'></div>
-      <div id="keyboard">
-    <button value="1" class="numbers">1</button>
-       <button value="2" class="numbers">2</button>
-       <button value="3" class="numbers">3</button>
-       <button value="4" class="numbers">4</button>
-           <button value="5" class="numbers">5</button>
-       <button value="6" class="numbers">6</button>
-       <button value="7" class="numbers">7</button>
-       <button value="8" class="numbers">8</button>
-          <button value="9" class="numbers">9</button>
-       <button value="0" class="numbers">0</button>
-          <button value=".">,</button>
-       <button value="+">+</button>
-        <button value="-">-</button>
-        <button value="*">*</button>
-        <button value="/">÷</button>
-          <button value="m">+/-</button>
-        <button value="c">С</button>  
-       <button value="=">=</button>
-          <button value="%">%</button>
-          </div>
-      
-      <script src="script.js"></script>
-
-  </body>
-
+    <title>Fedor Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+    
+<body>
+        <div id="keyboard">
+            <div id='display'></div>
+            <p><button value="c">С</button><button value="m">+/-</button><button value="%">%</button><button value="/" class="yellow">÷</button></p>
+            <p><button value="1" class="numbers">1</button><button value="2" class="numbers">2</button><button value="3" class="numbers">3</button><button value="*" class="yellow">*</button></p>
+            <p><button value="4" class="numbers">4</button><button value="5" class="numbers">5</button><button value="6" class="numbers">6</button><button value="-" class="yellow">-</button> </p>
+            <p> <button value="7" class="numbers">7</button><button value="8" class="numbers">8</button><button value="9" class="numbers">9</button><button value="+" class="yellow">+</button> </p>
+            <p id="zero"><button value="0" class="numbers" id="null">0</button><button value=".">,</button><button value="=" class="yellow">=</button></p>
+        </div>
+    
+    <script src="script.js"></script>
+</body>
 </html>

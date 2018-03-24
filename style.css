@@ -1,0 +1,50 @@
+* {
+    font-size: 1em;
+}
+
+p {
+    margin: 0px;
+    padding: 0px;
+
+}
+
+#keyboard {
+    background-color: red;
+    width: 240px;
+    display: block;
+}
+
+#keyboard #display {
+    background-color: lightgray;
+    height: 35px;
+    text-align: justify;
+    font-size: 2em;
+    padding: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+#keyboard button {
+    border-width: 1px;
+    height: 60px;
+    width: 60px;
+    border-color: lightgrey;
+    cursor: pointer;
+}
+
+button:focus {outline:0;}
+
+#keyboard .yellow {
+    border-width: 1px;
+    border-color: lightgrey;
+    color: white;
+    background-color: rgb(255, 146, 0)
+}
+
+#keyboard #zero {
+    text-align: left;
+}
+
+#keyboard #zero #null {
+    width: 120px;
+}
